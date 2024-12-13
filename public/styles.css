@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-section form {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .form-section label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .form-section input {
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .form-section button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .form-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Seats Section */
+  .seats-section {
+    text-align: center;
+  }
+  
+  .seat-layout {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .seat.booked {
+    background-color: #dc3545;
+    cursor: not-allowed;
+  }
+  
+  .seat:hover:not(.booked) {
+    background-color: #218838;
+  }
+  
+  /* .last-row {
+    grid-column: span 2;
+    justify-self: center;
+  } */
+  
+  @media (max-width: 600px) {
+    .seat-layout {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .seat {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
+
+  
